@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maple Street Consulting | Pricing workshops for independent consultants</title>
+<meta name="description" content="Workshops and 1:1 pricing reviews for consultants, designers and strategists who are ready to stop guessing at their rates.">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#1E3A2F">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Maple Street Consulting">
+<meta property="og:title" content="Maple Street Consulting">
+<meta property="og:description" content="Workshops and 1:1 pricing reviews for consultants, designers and strategists who are ready to stop guessing at their rates.">
+<meta property="og:image" content="https://singulate-ai.github.io/maple-street-consulting/maple-street/og.png">
+<link rel="icon" type="image/svg+xml" href="maple-street/mark.svg">
+<link rel="icon" type="image/png" sizes="512x512" href="maple-street/icon-512.png">
+<link rel="apple-touch-icon" href="maple-street/icon-512.png">
+<!-- Maple Street Consulting is a fictional business. Singulate uses it to demonstrate the product. -->
+<style>
+@font-face{font-family:'Fraunces';src:url(maple-street/fonts/fraunces.woff2) format('woff2');font-weight:400 700;font-display:swap}
+@font-face{font-family:'Inter';src:url(maple-street/fonts/inter.woff2) format('woff2');font-weight:400 700;font-display:swap}
+:root{
+  --forest:#1E3A2F;--forest-2:#2C5243;--maple:#B8432E;--amber:#E9A23B;
+  --cream:#FBF6EC;--paper:#FFFDF8;--sage:#DCE5DA;--ink:#1E2A24;--muted:#56645C;--line:#E7DFD0;
+  --serif:'Fraunces',Georgia,'Times New Roman',serif;--sans:'Inter',-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);color:var(--ink);font:400 17px/1.6 var(--sans)}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+.wrap{width:min(1120px,100% - 40px);margin-inline:auto}
+.eyebrow{font:600 12px/1.2 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--maple);margin:0 0 14px}
+h1,h2,h3{font-family:var(--serif);font-weight:600;color:var(--forest);letter-spacing:-.01em;margin:0}
+h1{font-size:clamp(40px,6vw,68px);line-height:1.04}
+h2{font-size:clamp(30px,4vw,42px);line-height:1.12}
+h3{font-size:22px;line-height:1.25}
+p{margin:0}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:999px;font:600 15px/1 var(--sans);text-decoration:none;border:1.5px solid var(--forest);transition:transform .15s ease,background .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--maple);border-color:var(--maple);color:#fff}
+.btn-ghost{color:var(--forest);background:transparent}
+
+/* header */
+header{position:sticky;top:0;z-index:5;background:rgba(251,246,236,.92);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:76px}
+.brand img{height:40px;width:auto}
+.nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0;font:500 15px/1 var(--sans)}
+.nav ul a{text-decoration:none;color:var(--forest)}
+.nav .btn{padding:11px 18px;font-size:14px}
+
+/* hero */
+.hero{padding:72px 0 64px}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.hero .lede{font-size:20px;color:var(--muted);max-width:30ch;margin:22px 0 32px}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px}
+.hero-art{border-radius:28px;overflow:hidden;box-shadow:0 30px 60px -30px rgba(30,58,47,.45)}
+
+/* next workshop */
+.band{background:var(--forest);color:var(--cream);padding:64px 0}
+.band h2,.band h3{color:var(--paper)}
+.band .eyebrow{color:var(--amber)}
+.workshop{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center}
+.workshop p.body{color:#DCE5DA;font-size:18px;margin-top:16px;max-width:52ch}
+.details{background:var(--paper);color:var(--ink);border-radius:22px;padding:28px}
+.details dl{margin:0 0 22px;display:grid;grid-template-columns:auto 1fr;gap:10px 18px;font-size:15px}
+.details dt{color:var(--muted)}
+.details dd{margin:0;font-weight:600;color:var(--forest)}
+.details .btn{width:100%;justify-content:center}
+
+/* sections */
+section.block{padding:84px 0}
+.intro{max-width:640px;margin-bottom:44px}
+.intro p{color:var(--muted);font-size:18px;margin-top:14px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:28px}
+.card .tag{display:inline-block;font:600 12px/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--forest-2);background:var(--sage);border-radius:999px;padding:7px 11px;margin-bottom:18px}
+.card p{color:var(--muted);margin-top:10px}
+.who{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.who div{border-top:3px solid var(--amber);padding-top:18px}
+.who p{color:var(--muted);margin-top:8px}
+.past{display:flex;gap:28px;align-items:center;justify-content:space-between;background:var(--sage);border-radius:22px;padding:30px 34px}
+.past p{color:var(--forest-2);margin-top:6px}
+
+/* about */
+.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+.about p{color:var(--muted);font-size:18px}
+.about p+p{margin-top:16px}
+
+/* footer */
+footer{background:var(--forest);color:#C9D6CB;padding:48px 0 36px;font-size:15px}
+.foot{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:flex-start}
+.foot img{height:36px;width:auto}
+.foot a{color:var(--paper)}
+.fine{margin-top:32px;padding-top:20px;border-top:1px solid rgba(255,255,255,.15);font-size:13px;color:#9FB3A5}
+
+@media (max-width:900px){
+  .hero-grid,.workshop,.about{grid-template-columns:1fr}
+  .cards,.who{grid-template-columns:1fr}
+  .nav ul{display:none}
+  .past{flex-direction:column;align-items:flex-start}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Maple Street Consulting home"><img src="maple-street/logo.png" alt="Maple Street Consulting" width="186" height="40"></a>
+    <ul>
+      <li><a href="#workshops">Workshops</a></li>
+      <li><a href="#reviews">Pricing reviews</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+    <a class="btn btn-primary" href="#next">See the next workshop</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Pricing workshops for independent work</p>
+        <h1>Price your work like you mean it.</h1>
+        <p class="lede">Workshops and 1:1 reviews for consultants, designers and strategists who are ready to stop guessing at their rates.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#next">See the next workshop</a>
+          <a class="btn btn-ghost" href="#reviews">Book a pricing review</a>
+        </div>
+      </div>
+      <div class="hero-art"><img src="maple-street/hero.png" alt="A project quote on a desk, broken into scope, research, revisions and handoff" width="1200" height="900"></div>
+    </div>
+  </section>
+
+  <section class="band" id="next">
+    <div class="wrap workshop">
+      <div>
+        <p class="eyebrow">Next workshop</p>
+        <h2>Pricing a client project</h2>
+        <p class="body">Bring a real brief. We'll scope it together, put a price on each part, and practice explaining the quote to a client, so you can send it with confidence.</p>
+      </div>
+      <div class="details">
+        <dl>
+          <dt>When</dt><dd>Thursday, November 12</dd>
+          <dt>Time</dt><dd>12:00 to 1:30 PM ET</dd>
+          <dt>Where</dt><dd>Online, live</dd>
+          <dt>Bring</dt><dd>One project you need to quote</dd>
+        </dl>
+        <a class="btn btn-primary" href="#next">Save your seat</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="workshops">
+    <div class="wrap">
+      <div class="intro">
+        <p class="eyebrow">How we work</p>
+        <h2>Three ways to get your pricing right</h2>
+        <p>Start with a workshop, go deeper one to one, and keep the tools that make the next quote faster.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <span class="tag">Live</span>
+          <h3>Workshops</h3>
+          <p>Small, practical sessions on setting rates, pricing projects and talking about money with clients.</p>
+        </article>
+        <article class="card" id="reviews">
+          <span class="tag">1:1</span>
+          <h3>Pricing reviews</h3>
+          <p>An hour on your actual numbers: your rates, your packages and the proposal you're about to send.</p>
+        </article>
+        <article class="card">
+          <span class="tag">Template</span>
+          <h3>The rate sheet</h3>
+          <p>The worksheet we use in every session, so you can price the next project in an afternoon.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" style="padding-top:0">
+    <div class="wrap">
+      <div class="intro">
+        <p class="eyebrow">Who comes</p>
+        <h2>Built for people who sell their expertise</h2>
+      </div>
+      <div class="who">
+        <div><h3>Brand strategists</h3><p>Price the research and the recommendations, not just the deck.</p></div>
+        <div><h3>Web designers</h3><p>Quote the build, the revisions and the handoff before scope creeps in.</p></div>
+        <div><h3>Marketing consultants</h3><p>Move from hourly to fixed fees without losing money on the plan.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" style="padding-top:0">
+    <div class="wrap past">
+      <div>
+        <h3>Missed &ldquo;Setting your rates&rdquo;?</h3>
+        <p>The recording of our last workshop is free for anyone on our list.</p>
+      </div>
+      <a class="btn btn-ghost" href="#next">Watch the recording</a>
+    </div>
+  </section>
+
+  <section class="block" id="about" style="padding-top:12px">
+    <div class="wrap about">
+      <div>
+        <p class="eyebrow">About</p>
+        <h2>A small team that has quoted a lot of client work</h2>
+      </div>
+      <div>
+        <p>Maple Street started as a Friday lunch where a few independent consultants traded notes on what they charged. The questions were always the same: what's my rate, how do I price a project, and how do I say the number out loud.</p>
+        <p>Now we teach it. Every session is built around your real work, and you leave with a price you can stand behind.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <img src="maple-street/logo-white.png" alt="Maple Street Consulting" width="167" height="36">
+      <p>Questions about a workshop?<br><a href="#next">hello@maplestreetconsulting.example</a></p>
+    </div>
+    <p class="fine">Maple Street Consulting is a fictional business used to demonstrate Singulate.</p>
+  </div>
+</footer>
+</body>
+</html>
