@@ -5,224 +5,153 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Maple Street Consulting | Pricing workshops for independent consultants</title>
 <meta name="description" content="Workshops and 1:1 pricing reviews for consultants, designers and strategists who are ready to stop guessing at their rates.">
-<meta name="robots" content="noindex,nofollow">
+<meta name="robots" content="noindex">
 <meta name="theme-color" content="#1E3A2F">
+<link rel="canonical" href="https://maplestreetconsultants.com/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Maple Street Consulting">
-<meta property="og:title" content="Maple Street Consulting">
+<meta property="og:title" content="Maple Street Consulting | Pricing workshops for independent consultants">
 <meta property="og:description" content="Workshops and 1:1 pricing reviews for consultants, designers and strategists who are ready to stop guessing at their rates.">
-<meta property="og:image" content="https://singulate-ai.github.io/maple-street-consulting/maple-street/og.png">
-<link rel="icon" type="image/svg+xml" href="maple-street/mark.svg">
-<link rel="icon" type="image/png" sizes="512x512" href="maple-street/icon-512.png">
-<link rel="apple-touch-icon" href="maple-street/icon-512.png">
-<!-- Maple Street Consulting is a fictional business. Singulate uses it to demonstrate the product. -->
-<style>
-@font-face{font-family:'Fraunces';src:url(maple-street/fonts/fraunces.woff2) format('woff2');font-weight:400 700;font-display:swap}
-@font-face{font-family:'Inter';src:url(maple-street/fonts/inter.woff2) format('woff2');font-weight:400 700;font-display:swap}
-:root{
-  --forest:#1E3A2F;--forest-2:#2C5243;--maple:#B8432E;--amber:#E9A23B;
-  --cream:#FBF6EC;--paper:#FFFDF8;--sage:#DCE5DA;--ink:#1E2A24;--muted:#56645C;--line:#E7DFD0;
-  --serif:'Fraunces',Georgia,'Times New Roman',serif;--sans:'Inter',-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;
-}
-*{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--cream);color:var(--ink);font:400 17px/1.6 var(--sans)}
-img{max-width:100%;height:auto;display:block}
-a{color:inherit}
-.wrap{width:min(1120px,100% - 40px);margin-inline:auto}
-.eyebrow{font:600 12px/1.2 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--maple);margin:0 0 14px}
-h1,h2,h3{font-family:var(--serif);font-weight:600;color:var(--forest);letter-spacing:-.01em;margin:0}
-h1{font-size:clamp(40px,6vw,68px);line-height:1.04}
-h2{font-size:clamp(30px,4vw,42px);line-height:1.12}
-h3{font-size:22px;line-height:1.25}
-p{margin:0}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:999px;font:600 15px/1 var(--sans);text-decoration:none;border:1.5px solid var(--forest);transition:transform .15s ease,background .15s ease}
-.btn:hover{transform:translateY(-1px)}
-.btn-primary{background:var(--maple);border-color:var(--maple);color:#fff}
-.btn-ghost{color:var(--forest);background:transparent}
-
-/* header */
-header{position:sticky;top:0;z-index:5;background:rgba(251,246,236,.92);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--line)}
-.nav{display:flex;align-items:center;justify-content:space-between;height:76px}
-.brand img{height:40px;width:auto}
-.nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0;font:500 15px/1 var(--sans)}
-.nav ul a{text-decoration:none;color:var(--forest)}
-.nav .btn{padding:11px 18px;font-size:14px}
-
-/* hero */
-.hero{padding:72px 0 64px}
-.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
-.hero .lede{font-size:20px;color:var(--muted);max-width:30ch;margin:22px 0 32px}
-.hero .actions{display:flex;flex-wrap:wrap;gap:12px}
-.hero-art{border-radius:28px;overflow:hidden;box-shadow:0 30px 60px -30px rgba(30,58,47,.45)}
-
-/* next workshop */
-.band{background:var(--forest);color:var(--cream);padding:64px 0}
-.band h2,.band h3{color:var(--paper)}
-.band .eyebrow{color:var(--amber)}
-.workshop{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center}
-.workshop p.body{color:#DCE5DA;font-size:18px;margin-top:16px;max-width:52ch}
-.details{background:var(--paper);color:var(--ink);border-radius:22px;padding:28px}
-.details dl{margin:0 0 22px;display:grid;grid-template-columns:auto 1fr;gap:10px 18px;font-size:15px}
-.details dt{color:var(--muted)}
-.details dd{margin:0;font-weight:600;color:var(--forest)}
-.details .btn{width:100%;justify-content:center}
-
-/* sections */
-section.block{padding:84px 0}
-.intro{max-width:640px;margin-bottom:44px}
-.intro p{color:var(--muted);font-size:18px;margin-top:14px}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.card{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:28px}
-.card .tag{display:inline-block;font:600 12px/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--forest-2);background:var(--sage);border-radius:999px;padding:7px 11px;margin-bottom:18px}
-.card p{color:var(--muted);margin-top:10px}
-.who{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.who div{border-top:3px solid var(--amber);padding-top:18px}
-.who p{color:var(--muted);margin-top:8px}
-.past{display:flex;gap:28px;align-items:center;justify-content:space-between;background:var(--sage);border-radius:22px;padding:30px 34px}
-.past p{color:var(--forest-2);margin-top:6px}
-
-/* about */
-.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
-.about p{color:var(--muted);font-size:18px}
-.about p+p{margin-top:16px}
-
-/* footer */
-footer{background:var(--forest);color:#C9D6CB;padding:48px 0 36px;font-size:15px}
-.foot{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:flex-start}
-.foot img{height:36px;width:auto}
-.foot a{color:var(--paper)}
-.fine{margin-top:32px;padding-top:20px;border-top:1px solid rgba(255,255,255,.15);font-size:13px;color:#9FB3A5}
-
-@media (max-width:900px){
-  .hero-grid,.workshop,.about{grid-template-columns:1fr}
-  .cards,.who{grid-template-columns:1fr}
-  .nav ul{display:none}
-  .past{flex-direction:column;align-items:flex-start}
-}
-</style>
+<meta property="og:url" content="https://maplestreetconsultants.com/">
+<meta property="og:image" content="https://maplestreetconsultants.com/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="assets/img/mark.svg">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/img/icon-512.png">
+<link rel="apple-touch-icon" href="assets/img/icon-512.png">
+<link rel="preload" href="assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "name": "Maple Street Consulting", "url": "https://maplestreetconsultants.com/", "logo": "https://maplestreetconsultants.com/assets/img/logo.png", "image": "https://maplestreetconsultants.com/assets/img/og.png", "email": "hello@maplestreetconsultants.com", "description": "Pricing workshops and 1:1 pricing reviews for independent consultants, designers and strategists.", "slogan": "Price your work like you mean it."}</script>
+<!-- Maple Street Consulting is a fictional business. Singulate uses it to demonstrate Singulate Studio. -->
 </head>
 <body>
-<header>
-  <div class="wrap nav">
-    <a class="brand" href="#top" aria-label="Maple Street Consulting home"><img src="maple-street/logo.png" alt="Maple Street Consulting" width="186" height="40"></a>
-    <ul>
-      <li><a href="#workshops">Workshops</a></li>
-      <li><a href="#reviews">Pricing reviews</a></li>
-      <li><a href="#about">About</a></li>
-    </ul>
-    <a class="btn btn-primary" href="#next">See the next workshop</a>
-  </div>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <nav class="wrap nav" aria-label="Main">
+    <a class="brand" href="index.html" aria-label="Maple Street Consulting home"><img src="assets/img/logo.png" alt="Maple Street Consulting" width="186" height="40"></a>
+    <ul class="menu" id="menu"><li><a href="workshops.html">Workshops</a></li><li><a href="pricing-reviews.html">Pricing reviews</a></li><li><a href="rate-sheet.html">Rate sheet</a></li><li><a href="about.html">About</a></li></ul>
+    <a class="btn btn-primary" href="workshops.html#next">Save your seat</a>
+    <button class="burger" type="button" aria-controls="menu" aria-expanded="false" aria-label="Menu"><svg width="20" height="14" viewBox="0 0 20 14"><path d="M1 1h18M1 7h18M1 13h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+  </nav>
 </header>
+<main id="main">
 
-<main id="top">
-  <section class="hero">
-    <div class="wrap hero-grid">
-      <div>
-        <p class="eyebrow">Pricing workshops for independent work</p>
-        <h1>Price your work like you mean it.</h1>
-        <p class="lede">Workshops and 1:1 reviews for consultants, designers and strategists who are ready to stop guessing at their rates.</p>
-        <div class="actions">
-          <a class="btn btn-primary" href="#next">See the next workshop</a>
-          <a class="btn btn-ghost" href="#reviews">Book a pricing review</a>
-        </div>
-      </div>
-      <div class="hero-art"><img src="maple-street/hero.png" alt="A project quote on a desk, broken into scope, research, revisions and handoff" width="1200" height="900"></div>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Pricing workshops for independent work</p>
+      <h1>Price your work like you mean it.</h1>
+      <p class="lede">Workshops and 1:1 reviews for consultants, designers and strategists who are ready to stop guessing at their rates.</p>
+      <div class="actions"><a class="btn btn-primary" href="workshops.html#next">See the next workshop</a><a class="btn btn-ghost" href="pricing-reviews.html">Book a pricing review</a></div>
+      <ul class="leave"><li><svg width="16" height="16" viewBox="0 0 100 100" aria-hidden="true"><path fill="#E9A23B" d="M50 12 L55.5 24 L62.5 20.5 L60 36 L70 27 L73 33.5 L83 31.5 L78 43.5 L85 47 L69 60 L71.5 67.5 L54 64.5 L54 84 L46 84 L46 64.5 L28.5 67.5 L31 60 L15 47 L22 43.5 L17 31.5 L27 33.5 L30 27 L40 36 L37.5 20.5 L44.5 24 Z"/></svg>A price you can stand behind</li><li><svg width="16" height="16" viewBox="0 0 100 100" aria-hidden="true"><path fill="#E9A23B" d="M50 12 L55.5 24 L62.5 20.5 L60 36 L70 27 L73 33.5 L83 31.5 L78 43.5 L85 47 L69 60 L71.5 67.5 L54 64.5 L54 84 L46 84 L46 64.5 L28.5 67.5 L31 60 L15 47 L22 43.5 L17 31.5 L27 33.5 L30 27 L40 36 L37.5 20.5 L44.5 24 Z"/></svg>The words to explain it</li><li><svg width="16" height="16" viewBox="0 0 100 100" aria-hidden="true"><path fill="#E9A23B" d="M50 12 L55.5 24 L62.5 20.5 L60 36 L70 27 L73 33.5 L83 31.5 L78 43.5 L85 47 L69 60 L71.5 67.5 L54 64.5 L54 84 L46 84 L46 64.5 L28.5 67.5 L31 60 L15 47 L22 43.5 L17 31.5 L27 33.5 L30 27 L40 36 L37.5 20.5 L44.5 24 Z"/></svg>A rate sheet you keep</li></ul>
     </div>
-  </section>
+    <div class="art"><img src="assets/img/hero-quote.jpg" width="1200" height="900" alt="A project quote for brand strategy, broken into four priced parts: discovery and research, strategy and recommendations, two rounds of revisions, and handoff, totaling $5,700"></div>
+  </div>
+</section>
 
-  <section class="band" id="next">
-    <div class="wrap workshop">
-      <div>
-        <p class="eyebrow">Next workshop</p>
-        <h2>Pricing a client project</h2>
-        <p class="body">Bring a real brief. We'll scope it together, put a price on each part, and practice explaining the quote to a client, so you can send it with confidence.</p>
-      </div>
-      <div class="details">
-        <dl>
-          <dt>When</dt><dd>Thursday, November 12</dd>
-          <dt>Time</dt><dd>12:00 to 1:30 PM ET</dd>
-          <dt>Where</dt><dd>Online, live</dd>
-          <dt>Bring</dt><dd>One project you need to quote</dd>
-        </dl>
-        <a class="btn btn-primary" href="#next">Save your seat</a>
-      </div>
+<section class="band" id="next">
+  <div class="wrap workshop">
+    <div>
+      <p class="eyebrow">Next workshop</p>
+      <h2>Pricing a client project</h2>
+      <p class="body">Bring a real brief. We'll scope it together, put a price on each part, and practice explaining the quote to a client, so you can send it with confidence.</p>
     </div>
-  </section>
+    <div class="details">
+      <dl><dt>When</dt><dd>Thursday, November 12</dd><dt>Time</dt><dd>12:00 to 1:30 PM ET</dd><dt>Where</dt><dd>Online, live</dd><dt>Bring</dt><dd>One project you need to quote</dd><dt>Price</dt><dd>$95</dd></dl>
+      <a class="btn btn-primary" href="workshops.html#next">Save your seat</a>
+      <p class="seats">Small groups, 24 seats per session</p>
+    </div>
+  </div>
+</section>
 
-  <section class="block" id="workshops">
-    <div class="wrap">
-      <div class="intro">
-        <p class="eyebrow">How we work</p>
-        <h2>Three ways to get your pricing right</h2>
-        <p>Start with a workshop, go deeper one to one, and keep the tools that make the next quote faster.</p>
-      </div>
-      <div class="cards">
-        <article class="card">
-          <span class="tag">Live</span>
-          <h3>Workshops</h3>
-          <p>Small, practical sessions on setting rates, pricing projects and talking about money with clients.</p>
-        </article>
-        <article class="card" id="reviews">
-          <span class="tag">1:1</span>
-          <h3>Pricing reviews</h3>
-          <p>An hour on your actual numbers: your rates, your packages and the proposal you're about to send.</p>
-        </article>
-        <article class="card">
-          <span class="tag">Template</span>
-          <h3>The rate sheet</h3>
-          <p>The worksheet we use in every session, so you can price the next project in an afternoon.</p>
-        </article>
-      </div>
+<section>
+  <div class="wrap">
+    <div class="intro"><p class="eyebrow">How we work</p><h2>Three ways to get your pricing right</h2><p>Start with a workshop, go deeper one to one, and keep the tools that make the next quote faster.</p></div>
+    <div class="cards">
+      <article class="card"><span class="tag">Live</span><h3>Workshops</h3><p>Small, practical sessions on setting rates, pricing projects and talking about money with clients. One topic, 90 minutes, your own work on the table.</p><span class="price">$95 per session</span><a class="textlink" href="workshops.html">See the schedule</a></article>
+      <article class="card"><span class="tag">1:1</span><h3>Pricing reviews</h3><p>An hour on your actual numbers: your rates, your packages and the proposal you're about to send. Written notes the next day.</p><span class="price">$350 per review</span><a class="textlink" href="pricing-reviews.html">How a review works</a></article>
+      <article class="card"><span class="tag">Free</span><h3>The rate sheet</h3><p>The worksheet we use in every session. Work out your day rate, break a project into parts, and write the sentence you'll say out loud.</p><span class="price">Free with the newsletter</span><a class="textlink" href="rate-sheet.html">Get the rate sheet</a></article>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="block" style="padding-top:0">
-    <div class="wrap">
-      <div class="intro">
-        <p class="eyebrow">Who comes</p>
-        <h2>Built for people who sell their expertise</h2>
-      </div>
-      <div class="who">
-        <div><h3>Brand strategists</h3><p>Price the research and the recommendations, not just the deck.</p></div>
-        <div><h3>Web designers</h3><p>Quote the build, the revisions and the handoff before scope creeps in.</p></div>
-        <div><h3>Marketing consultants</h3><p>Move from hourly to fixed fees without losing money on the plan.</p></div>
-      </div>
+<section class="sage">
+  <div class="wrap split">
+    <div class="art"><img src="assets/img/workshop-scene.jpg" width="1200" height="670" alt="Illustration of an online workshop: a laptop showing eight participants on a desk with a notebook, coffee and a calculator"></div>
+    <div>
+      <p class="eyebrow">Inside a workshop</p>
+      <h2>Ninety minutes on the project in front of you</h2>
+      <p class="muted" style="margin-top:14px;font-size:18px">No slides about pricing theory. You bring a brief you need to quote, and you leave with the quote.</p>
+      <ul class="checks"><li><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#DCE5DA"/><path d="M5.5 10.3l3 3 6-6.5" fill="none" stroke="#1E3A2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Scope it: break the brief into the parts a client is paying for</span></li><li><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#DCE5DA"/><path d="M5.5 10.3l3 3 6-6.5" fill="none" stroke="#1E3A2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Price it: put a number on each part, with a buffer for revisions</span></li><li><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#DCE5DA"/><path d="M5.5 10.3l3 3 6-6.5" fill="none" stroke="#1E3A2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Say it: practice explaining the quote out loud, in plain words</span></li></ul>
+      <p style="margin-top:24px"><a class="textlink" href="workshops.html">See what's coming up</a></p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="block" style="padding-top:0">
-    <div class="wrap past">
-      <div>
-        <h3>Missed &ldquo;Setting your rates&rdquo;?</h3>
-        <p>The recording of our last workshop is free for anyone on our list.</p>
-      </div>
-      <a class="btn btn-ghost" href="#next">Watch the recording</a>
+<section>
+  <div class="wrap">
+    <div class="intro"><p class="eyebrow">Who comes</p><h2>Built for people who sell their expertise</h2></div>
+    <div class="who">
+      <div><h3>Brand strategists</h3><p>Price the research and the recommendations, not just the deck.</p></div>
+      <div><h3>Web designers</h3><p>Quote the build, the revisions and the handoff before scope creeps in.</p></div>
+      <div><h3>Marketing consultants</h3><p>Move from hourly to fixed fees without losing money on the plan.</p></div>
+      <div><h3>Copywriters</h3><p>Stop pricing by the word and start pricing by the result.</p></div>
+      <div><h3>Photographers</h3><p>Separate the shoot day from the editing, the licensing and the travel.</p></div>
+      <div><h3>Fractional leaders</h3><p>Put a fee on advice, hands-on work and being on call.</p></div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="block" id="about" style="padding-top:12px">
-    <div class="wrap about">
-      <div>
-        <p class="eyebrow">About</p>
-        <h2>A small team that has quoted a lot of client work</h2>
-      </div>
-      <div>
-        <p>Maple Street started as a Friday lunch where a few independent consultants traded notes on what they charged. The questions were always the same: what's my rate, how do I price a project, and how do I say the number out loud.</p>
-        <p>Now we teach it. Every session is built around your real work, and you leave with a price you can stand behind.</p>
-      </div>
-    </div>
-  </section>
+<section class="paper">
+  <div class="wrap">
+    <div class="intro"><p class="eyebrow">Upcoming workshops</p><h2>One topic a month, always live</h2><p>Every session is recorded for the people who came. Can't make the time? Book the next one.</p></div>
+    <ul class="schedule"><li><div class="date"><span>Nov &middot; Thursday</span><b>12</b></div><div><h3>Pricing a client project<span class="pill">Next up</span></h3><p>Bring a real brief. We scope it together, put a price on each part, and practice saying the number to a client.</p><p>12:00 to 1:30 PM ET &middot; Online, live &middot; $95</p></div><a class="btn btn-ghost" href="workshops.html#next">Save your seat</a></li><li><div class="date"><span>Dec &middot; Thursday</span><b>10</b></div><div><h3>Raising rates with clients you already have</h3><p>When to raise, how much, and the email that tells a long-time client without losing them.</p><p>12:00 to 1:30 PM ET &middot; Online, live &middot; $95</p></div><a class="btn btn-ghost" href="workshops.html#next">Save your seat</a></li><li><div class="date"><span>Jan &middot; Thursday</span><b>14</b></div><div><h3>From hourly to fixed fees</h3><p>Turn the hours you track into packages a client can say yes to, and keep the margin you had.</p><p>12:00 to 1:30 PM ET &middot; Online, live &middot; $95</p></div><a class="btn btn-ghost" href="workshops.html#next">Save your seat</a></li><li><div class="date"><span>Feb &middot; Thursday</span><b>11</b></div><div><h3>The first money conversation</h3><p>What to say on the discovery call when the client asks "roughly what does this cost?"</p><p>12:00 to 1:30 PM ET &middot; Online, live &middot; $95</p></div><a class="btn btn-ghost" href="workshops.html#next">Save your seat</a></li></ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="signup">
+  <div><p class="eyebrow">Free</p><h2>Get the rate sheet</h2><p class="muted" style="margin-top:14px;font-size:18px">The worksheet from every session, plus one email a month: the next workshop and one pricing idea you can use that week.</p></div>
+  <div>
+    <form class="form" data-demo>
+      <label class="skip" for="email-Send">Email address</label>
+      <input id="email-Send" type="email" required placeholder="you@yourstudio.com" autocomplete="email">
+      <button class="btn btn-primary" type="submit">Send it to me</button>
+    </form>
+    <p class="thanks" role="status">Thanks. Maple Street is a demo business, so nothing was sent and your address wasn't stored.</p>
+    <p class="form-note">One email a month. Unsubscribe any time.</p>
+  </div>
+</div>
+  </div>
+</section>
+
+<section class="paper">
+  <div class="narrow">
+    <div class="intro"><p class="eyebrow">Questions</p><h2>Before you book</h2></div>
+    <div class="faq"><details><summary>Do I need a project to bring?</summary><div class="a">It helps a lot. If you don't have one right now, bring the last project you quoted. You'll see what you'd change.</div></details><details><summary>Is it recorded?</summary><div class="a">Yes. Everyone who registers gets the recording and the worksheet the next morning, whether they made it live or not.</div></details><details><summary>I charge hourly. Is this still for me?</summary><div class="a">Yes. Most people who come start there. The workshops show you how to turn hours into parts a client can see and agree to pay for.</div></details><details><summary>What if I can't make it?</summary><div class="a">Move to any later workshop, no charge. Write to us before the session starts.</div></details></div>
+  </div>
+</section>
+
+<section class="band tight">
+  <div class="wrap cta">
+    <h2>Your next quote can be the easy one.</h2>
+    <p>Bring a real brief to the next workshop and leave with a price you can stand behind.</p>
+    <div class="actions"><a class="btn btn-primary" href="workshops.html#next">Save your seat</a><a class="btn btn-light" href="rate-sheet.html">Get the rate sheet</a></div>
+  </div>
+</section>
+
 </main>
-
 <footer>
   <div class="wrap">
     <div class="foot">
-      <img src="maple-street/logo-white.png" alt="Maple Street Consulting" width="167" height="36">
-      <p>Questions about a workshop?<br><a href="#next">hello@maplestreetconsulting.example</a></p>
+      <div><img src="assets/img/logo-white.png" alt="Maple Street Consulting" width="167" height="36"><p>Pricing workshops and 1:1 reviews for people who sell their expertise.</p></div>
+      <div><h4>Work with us</h4><ul><li><a href="workshops.html">Workshops</a></li><li><a href="pricing-reviews.html">Pricing reviews</a></li><li><a href="rate-sheet.html">The rate sheet</a></li></ul></div>
+      <div><h4>Maple Street</h4><ul><li><a href="about.html">About</a></li><li><a href="mailto:hello@maplestreetconsultants.com">Contact</a></li><li><a href="workshops.html#recording">Past recordings</a></li></ul></div>
+      <div><h4>Questions?</h4><p>Write to <a href="mailto:hello@maplestreetconsultants.com">hello@maplestreetconsultants.com</a>. A real person on the team answers within a day.</p></div>
     </div>
-    <p class="fine">Maple Street Consulting is a fictional business used to demonstrate Singulate.</p>
+    <div class="fine"><span>&copy; 2026 Maple Street Consulting</span><span>Maple Street Consulting is a fictional business created by Singulate to demonstrate Singulate Studio. Its workshops, prices and dates are examples.</span></div>
   </div>
 </footer>
+<script src="assets/js/site.js"></script>
 </body>
 </html>

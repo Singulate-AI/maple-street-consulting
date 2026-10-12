@@ -1,3 +1,5 @@
-# Maple Street Consulting
+# Maple Street Consulting (fictional)
 
-A fictional business. Singulate uses this one-page site to demonstrate its onboarding agent, which builds a brand kit from a company website.
+A fictional business Singulate uses to demonstrate Singulate Studio. Live at https://maplestreetconsultants.com/
+
+Built from `site-src/build.py` in the Singulate demos workspace. Do not edit the HTML by hand.
